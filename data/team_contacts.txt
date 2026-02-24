@@ -1,0 +1,6 @@
+# Format: Department|Name|Email|Phone|Title
+Sales|Jane Martinez|jane.martinez@echocreative.studio|(555) 234-5680|Director of Sales
+Client Relations|David Chen|david.chen@echocreative.studio|(555) 234-5681|Account Manager
+Creative|Sofia Reyes|sofia.reyes@echocreative.studio|(555) 234-5682|Creative Director
+Production|Marcus Johnson|marcus.johnson@echocreative.studio|(555) 234-5683|Head of Production
+Support|Emily Watson|support@echocreative.studio|(555) 234-5684|Support Lead
