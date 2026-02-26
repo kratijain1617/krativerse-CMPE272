@@ -22,8 +22,10 @@
                 <li><a href="index.php" <?php echo ($currentPage ?? '') === 'home' ? 'class="active"' : ''; ?>>Home</a></li>
                 <li><a href="about.php" <?php echo ($currentPage ?? '') === 'about' ? 'class="active"' : ''; ?>>About</a></li>
                 <li><a href="products.php" <?php echo ($currentPage ?? '') === 'products' ? 'class="active"' : ''; ?>>Products & Services</a></li>
+                <li><a href="packages.php" <?php echo ($currentPage ?? '') === 'packages' ? 'class="active"' : ''; ?>>Packages</a></li>
                 <li><a href="news.php" <?php echo ($currentPage ?? '') === 'news' ? 'class="active"' : ''; ?>>News</a></li>
                 <li><a href="contacts.php" <?php echo ($currentPage ?? '') === 'contacts' ? 'class="active"' : ''; ?>>Contact</a></li>
+                <li><a href="resonance.php" class="nav-cta">Resonance Finder</a></li>
             </ul>
         </nav>
     </header>
