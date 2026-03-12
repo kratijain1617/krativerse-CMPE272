@@ -1,0 +1,9 @@
+# Current Website Users
+# Format: Name|Email|Join Date
+Mary Smith|mary.smith@email.com|2025-01-15
+John Wang|john.wang@email.com|2025-02-03
+Alex Bington|alex.bington@email.com|2025-02-10
+Sarah Johnson|sarah.j@email.com|2025-02-18
+Michael Chen|m.chen@email.com|2025-02-22
+Emily Davis|emily.davis@email.com|2025-03-01
+David Martinez|d.martinez@email.com|2025-03-05

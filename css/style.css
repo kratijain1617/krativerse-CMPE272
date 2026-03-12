@@ -620,6 +620,271 @@ body {
     color: #f85149 !important;
 }
 
+/* Secure Section - Admin Dashboard (Creative) */
+body.secure-page .main-content {
+    background: 
+        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(88, 166, 255, 0.15), transparent),
+        radial-gradient(ellipse 60% 40% at 100% 50%, rgba(240, 136, 62, 0.08), transparent);
+}
+
+.secure-hero {
+    background: linear-gradient(165deg, var(--color-surface) 0%, var(--color-bg) 50%, var(--color-surface-alt) 100%);
+    border-bottom: 1px solid var(--color-border);
+    padding: 3.5rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.secure-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+    opacity: 0.5;
+}
+
+.secure-hero-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.secure-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+    background: linear-gradient(135deg, rgba(88, 166, 255, 0.2), rgba(240, 136, 62, 0.15));
+    border: 1px solid rgba(88, 166, 255, 0.3);
+    border-radius: 16px;
+}
+
+.secure-hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
+
+.secure-subtitle {
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.secure-meta {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.secure-badge {
+    background: linear-gradient(135deg, var(--color-accent), #79b8ff);
+    color: var(--color-bg);
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.secure-count {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    padding: 0.35rem 0.75rem;
+    background: var(--color-surface);
+    border-radius: 8px;
+}
+
+.secure-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn-ghost {
+    background: transparent;
+    color: var(--color-text-muted);
+    border: none;
+}
+
+.btn-ghost:hover {
+    color: var(--color-accent);
+}
+
+.document-header {
+    padding: 1.75rem 2rem;
+    border-bottom: 1px solid var(--color-border);
+    background: linear-gradient(180deg, var(--color-surface-alt) 0%, var(--color-surface) 100%);
+}
+
+.document-header h2 {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.document-header p {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+}
+
+.users-document {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.users-table th,
+.users-table td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+}
+
+.users-table thead th {
+    background: linear-gradient(180deg, var(--color-surface-alt) 0%, var(--color-surface) 100%);
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-text-muted);
+    border-bottom: 2px solid var(--color-accent);
+}
+
+.users-table tbody tr {
+    border-bottom: 1px solid var(--color-border);
+    transition: all 0.2s ease;
+}
+
+.users-table tbody tr:hover {
+    background: linear-gradient(90deg, rgba(88, 166, 255, 0.08), rgba(88, 166, 255, 0.02));
+}
+
+.users-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.users-table td {
+    color: var(--color-text);
+}
+
+.users-table td:first-child {
+    color: var(--color-accent-warm);
+    font-weight: 600;
+    width: 3rem;
+}
+
+.users-table td:nth-child(2) {
+    font-weight: 600;
+}
+
+.users-table td:nth-child(3) {
+    color: var(--color-accent);
+}
+
+.users-table td:empty {
+    padding: 3rem;
+    text-align: center;
+    color: var(--color-text-muted);
+}
+
+/* Login */
+.login-section {
+    max-width: 420px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.login-box {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 2.5rem;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+}
+
+.login-box h1 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.login-subtitle {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.login-error {
+    color: #f85149;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: rgba(248, 81, 73, 0.1);
+    border-radius: var(--radius-sm);
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.login-form label span {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.35rem;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    color: var(--color-text);
+    transition: border-color 0.2s ease;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+}
+
+.login-form button {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.875rem;
+}
+
+/* Secure section - users table */
+.secure-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
 /* How It Works */
 .how-it-works {
     max-width: 1100px;
