@@ -1,6 +1,10 @@
 <?php
 $pageTitle = 'Products & Services';
 $currentPage = 'products';
+
+// Reuse the lab product data so we have 10 concrete offerings.
+require_once __DIR__ . '/lab-products-cookies/includes/products_data.php';
+
 include 'includes/header.php';
 ?>
 
@@ -75,6 +79,33 @@ include 'includes/header.php';
     <div class="products-cta">
         <p>Interested in a custom package? We tailor our services to fit your unique needs and budget.</p>
         <a href="contacts.php" class="btn btn-primary">Request a Quote</a>
+    </div>
+</section>
+
+<section class="products-content">
+    <h2 style="text-align:center;margin-bottom:2rem;">Production Packages</h2>
+    <div class="product-grid">
+        <?php foreach ($PRODUCTS as $p): ?>
+            <article class="product-card">
+                <div class="product-header">
+                    <span class="product-icon">🎥</span>
+                    <h2><?php echo htmlspecialchars($p['name']); ?></h2>
+                </div>
+                <p><?php echo htmlspecialchars($p['short']); ?></p>
+                <div style="margin-top:0.75rem;display:flex;justify-content:space-between;align-items:center;gap:0.5rem;">
+                    <span style="font-size:0.8rem;color:var(--color-text-muted);">
+                        ID: <?php echo htmlspecialchars(strtoupper($p['id'])); ?>
+                    </span>
+                    <a
+                        href="lab-products-cookies/<?php echo htmlspecialchars($p['page']); ?>"
+                        class="btn btn-primary"
+                        style="padding:0.5rem 1.2rem;font-size:0.9rem;"
+                    >
+                        View Details
+                    </a>
+                </div>
+            </article>
+        <?php endforeach; ?>
     </div>
 </section>
 

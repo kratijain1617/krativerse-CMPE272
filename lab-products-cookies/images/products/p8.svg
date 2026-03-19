@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#63a7ff" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#ff9a5a" stop-opacity="0.14"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="#0b1220"/>
+  <rect x="40" y="40" width="1120" height="620" rx="36" fill="url(#g)" stroke="rgba(255,255,255,0.18)" stroke-width="3"/>
+  <rect x="170" y="210" width="860" height="340" rx="28" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)"/>
+  <path d="M260 460 L420 330 L520 400 L660 290 L760 350 L920 260" fill="none" stroke="rgba(99,167,255,0.35)" stroke-width="8" stroke-linecap="round"/>
+  <text x="90" y="210" fill="#e9eefc" font-family="Arial, sans-serif" font-size="62" font-weight="800">Motion Pack</text>
+  <text x="90" y="280" fill="#9fb0d0" font-family="Arial, sans-serif" font-size="30">Titles " Lower thirds " End cards</text>
+</svg>
+
