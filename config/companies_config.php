@@ -2,12 +2,9 @@
 /**
  * CURL Lab - Company API URLs
  * 
- * Update COMPANY_B_API_URL and COMPANY_C_API_URL with your teammates' actual URLs
- * once they deploy their api/users.php endpoints.
- * 
- * Expected API response format (same for all companies):
- * {"company":"A","users":[{"id":1,"name":"...","email":"...","department":"..."}]}
+ * Expected API response format:
+ * {"company_name":"...","users":[{"id":1,"name":"...","email":"...","role":"..."}]}
  */
 define('COMPANY_A_NAME', 'Echo Creative Studio (A)');
-define('COMPANY_B_API_URL', 'https://company-b.example.com/api/users.php');  // UPDATE with teammate B's URL
-define('COMPANY_C_API_URL', 'https://company-c.example.com/api/users.php');  // UPDATE with teammate C's URL
+define('COMPANY_B_API_URL', 'https://geeshitha.com/nexus_academy/api/users.php');  // Nexus Academy (teammate)
+define('USE_FALLBACK_WHEN_CURL_BLOCKED', true);  // Company B API returns HTML (bot block) via CURL; use fallback so lab works

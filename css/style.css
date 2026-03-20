@@ -883,6 +883,20 @@ body.secure-page .main-content {
     font-size: 0.85em;
 }
 
+.all-users-status {
+    margin-top: 2rem;
+    padding: 1rem 1.25rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+.all-users-status ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.25rem;
+}
+
 @media (max-width: 768px) {
     .all-users-content {
         padding: 1rem;
