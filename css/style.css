@@ -810,6 +810,93 @@ body.secure-page .main-content {
     color: var(--color-text-muted);
 }
 
+/* All Users (CURL Lab) */
+.all-users-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.company-users-block {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.company-users-block h2 {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+}
+
+.company-users-block .source-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.65rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+.company-users-block .source-badge.local {
+    background: rgba(88, 166, 255, 0.2);
+    color: var(--color-accent);
+}
+
+.company-users-block .source-badge.curl {
+    background: rgba(240, 136, 62, 0.2);
+    color: var(--color-accent-warm);
+}
+
+.company-users-block .users-table {
+    margin-top: 0.5rem;
+}
+
+.company-users-block .users-table thead th {
+    border-bottom: 2px solid var(--color-accent);
+}
+
+.company-users-block .no-users {
+    color: var(--color-text-muted);
+    font-style: italic;
+    padding: 1rem 0;
+}
+
+.all-users-hint {
+    background: var(--color-surface);
+    border: 1px dashed var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 1rem 1.25rem;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+}
+
+.all-users-hint code {
+    background: var(--color-surface-alt);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.85em;
+}
+
+@media (max-width: 768px) {
+    .all-users-content {
+        padding: 1rem;
+    }
+    .company-users-block {
+        padding: 1.25rem;
+    }
+    .company-users-block .users-table th,
+    .company-users-block .users-table td {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
 /* Login */
 .login-section {
     max-width: 420px;
