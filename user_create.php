@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $input[$key] = '';
             }
         } catch (Throwable $e) {
-            $errors[] = 'Could not save user. Check MySQL setup and table creation.';
+            $errors[] = getMysqlErrorMessage($e);
         }
     }
 }

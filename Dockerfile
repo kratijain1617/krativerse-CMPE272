@@ -2,6 +2,8 @@ FROM php:8.2-cli-alpine
 
 WORKDIR /var/www/html
 
+RUN docker-php-ext-install pdo_mysql
+
 COPY . .
 
 EXPOSE 8000

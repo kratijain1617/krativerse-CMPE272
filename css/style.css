@@ -942,6 +942,16 @@ body.secure-page .main-content {
     gap: 1rem;
 }
 
+.users-search-form {
+    grid-template-columns: 1fr auto auto;
+    align-items: end;
+    gap: 0.75rem;
+}
+
+.users-search-form label {
+    margin: 0;
+}
+
 .users-form label {
     display: block;
     color: var(--color-text);
@@ -961,6 +971,14 @@ body.secure-page .main-content {
 
 .users-form textarea {
     resize: vertical;
+}
+
+.users-form .btn {
+    justify-self: start;
+}
+
+.users-search-form .btn {
+    margin: 0;
 }
 
 .users-search-results {
@@ -983,6 +1001,12 @@ body.secure-page .main-content {
     color: #9be9a8;
     border-radius: var(--radius-sm);
     padding: 0.75rem 1rem;
+}
+
+@media (max-width: 768px) {
+    .users-search-form {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 768px) {

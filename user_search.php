@@ -25,7 +25,7 @@ if ($q !== '') {
         $stmt->execute(['term' => $term]);
         $results = $stmt->fetchAll();
     } catch (Throwable $e) {
-        $searchError = 'Search failed. Check MySQL setup and table creation.';
+        $searchError = getMysqlErrorMessage($e);
     }
 }
 
@@ -52,7 +52,7 @@ include 'includes/header.php';
         <p class="form-error"><?php echo htmlspecialchars($searchError); ?></p>
     <?php endif; ?>
 
-    <?php if ($q !== ''): ?>
+    <?php if ($q !== '' && !$searchError): ?>
         <div class="users-document users-search-results">
             <div class="document-header">
                 <h2>Search Results</h2>
