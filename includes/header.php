@@ -25,6 +25,7 @@
                 <li><a href="<?php echo $base; ?>packages.php" <?php echo ($currentPage ?? '') === 'packages' ? 'class="active"' : ''; ?>>Packages</a></li>
                 <li><a href="<?php echo $base; ?>news.php" <?php echo ($currentPage ?? '') === 'news' ? 'class="active"' : ''; ?>>News</a></li>
                 <li><a href="<?php echo $base; ?>contacts.php" <?php echo ($currentPage ?? '') === 'contacts' ? 'class="active"' : ''; ?>>Contact</a></li>
+                <li><a href="<?php echo $base; ?>users.php" <?php echo ($currentPage ?? '') === 'users' ? 'class="active"' : ''; ?>>Users</a></li>
                 <li><a href="<?php echo $base; ?>resonance.php" class="nav-cta">Resonance Finder</a></li>
                 <li><a href="<?php echo $base; ?>list_all_users.php" <?php echo ($currentPage ?? '') === 'users_all' ? 'class="active"' : ''; ?>>All Users</a></li>
                 <li><a href="<?php echo $base; ?>login.php">Admin</a></li>
