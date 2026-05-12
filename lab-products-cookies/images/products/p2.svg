@@ -10,6 +10,5 @@
   <rect x="140" y="170" width="420" height="260" rx="22" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)"/>
   <rect x="650" y="260" width="410" height="220" rx="22" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)"/>
   <text x="90" y="210" fill="#e9eefc" font-family="Arial, sans-serif" font-size="62" font-weight="800">Brand Film</text>
-  <text x="90" y="280" fill="#9fb0d0" font-family="Arial, sans-serif" font-size="30">3060 seconds " Cinematic</text>
+  <text x="90" y="280" fill="#9fb0d0" font-family="Arial, sans-serif" font-size="30">30–60 seconds · Cinematic</text>
 </svg>
-

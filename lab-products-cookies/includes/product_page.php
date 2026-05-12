@@ -27,7 +27,14 @@ include __DIR__ . '/header.php';
 
 <section class="product-page">
   <div class="card product-hero">
-    <img src="<?php echo htmlspecialchars($product['image']); ?>" alt="<?php echo htmlspecialchars($product['name']); ?>">
+    <img
+      src="<?php echo htmlspecialchars(product_image_src($product)); ?>"
+      alt="<?php echo htmlspecialchars($product['name']); ?>"
+      loading="lazy"
+      decoding="async"
+      data-fallback="<?php echo htmlspecialchars($product['image']); ?>"
+      onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback}"
+    >
     <div class="product-meta" style="margin-top: 14px;">
       <h1 style="margin:0;"><?php echo htmlspecialchars($product['name']); ?></h1>
       <span class="badge"><?php echo htmlspecialchars(strtoupper($product['id'])); ?></span>

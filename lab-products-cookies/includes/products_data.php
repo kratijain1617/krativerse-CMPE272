@@ -10,6 +10,7 @@ $PRODUCTS = [
         'name' => 'Resonance Audit (Discovery)',
         'short' => 'A structured brand + audience discovery sprint.',
         'long' => 'A 90-minute discovery workshop + creative brief. We map your audience, objective, key message, and platform strategy so production is fast, focused, and measurable.',
+        'photo' => 'https://picsum.photos/seed/echo-p1/800/450',
         'image' => 'images/products/p1.svg',
         'page' => 'product1.php',
     ],
@@ -18,6 +19,7 @@ $PRODUCTS = [
         'name' => '30–60s Brand Film',
         'short' => 'Cinematic brand story optimized for conversion.',
         'long' => 'A premium 30–60 second film with a clear hook → problem → promise → proof → CTA structure. Includes scripting, shot list, editing, color, and sound.',
+        'photo' => 'https://picsum.photos/seed/echo-p2/800/450',
         'image' => 'images/products/p2.svg',
         'page' => 'product2.php',
     ],
@@ -26,6 +28,7 @@ $PRODUCTS = [
         'name' => 'Product Demo Video',
         'short' => 'Explain your product in under 90 seconds.',
         'long' => 'A focused demo that shows the problem, the workflow, and the outcome. Best for SaaS, apps, and tools. Includes screen capture and simple motion graphics.',
+        'photo' => 'https://picsum.photos/seed/echo-p3/800/450',
         'image' => 'images/products/p3.svg',
         'page' => 'product3.php',
     ],
@@ -34,6 +37,7 @@ $PRODUCTS = [
         'name' => 'Customer Testimonial',
         'short' => 'Build trust with real customer proof.',
         'long' => 'Interview-driven testimonial content. We capture the customer’s challenge, your solution, and results. Great for landing pages and LinkedIn.',
+        'photo' => 'https://picsum.photos/seed/echo-p4/800/450',
         'image' => 'images/products/p4.svg',
         'page' => 'product4.php',
     ],
@@ -42,6 +46,7 @@ $PRODUCTS = [
         'name' => 'Recruiting / Culture Video',
         'short' => 'Attract talent with authentic culture stories.',
         'long' => 'A short culture piece that highlights your values, team, and day-to-day. Designed to reduce candidate drop-off and improve applicant quality.',
+        'photo' => 'https://picsum.photos/seed/echo-p5/800/450',
         'image' => 'images/products/p5.svg',
         'page' => 'product5.php',
     ],
@@ -50,6 +55,7 @@ $PRODUCTS = [
         'name' => 'Event Highlight Reel',
         'short' => 'Capture the energy and share it fast.',
         'long' => 'Same-day or next-day highlights with music, crowd moments, speaker soundbites, and brand moments. Perfect for conferences and launches.',
+        'photo' => 'https://picsum.photos/seed/echo-p6/800/450',
         'image' => 'images/products/p6.svg',
         'page' => 'product6.php',
     ],
@@ -58,6 +64,7 @@ $PRODUCTS = [
         'name' => 'Photography Day (Brand + Team)',
         'short' => 'A full day of polished photos for web & socials.',
         'long' => 'Headshots, team photos, office lifestyle, product photos, and hero images. Delivered as web-ready and print-ready sets.',
+        'photo' => 'https://picsum.photos/seed/echo-p7/800/450',
         'image' => 'images/products/p7.svg',
         'page' => 'product7.php',
     ],
@@ -66,6 +73,7 @@ $PRODUCTS = [
         'name' => 'Motion Graphics Pack',
         'short' => 'Animated titles, lower thirds, and end cards.',
         'long' => 'A cohesive motion kit that improves perceived quality and brand consistency. Includes exported templates for repeated use.',
+        'photo' => 'https://picsum.photos/seed/echo-p8/800/450',
         'image' => 'images/products/p8.svg',
         'page' => 'product8.php',
     ],
@@ -74,6 +82,7 @@ $PRODUCTS = [
         'name' => 'Social Cutdown Suite',
         'short' => 'Turn 1 shoot into 6+ social assets.',
         'long' => 'We re-edit your hero video into multiple hooks, lengths, and aspect ratios. Ideal for IG Reels, TikTok, LinkedIn, and ads.',
+        'photo' => 'https://picsum.photos/seed/echo-p9/800/450',
         'image' => 'images/products/p9.svg',
         'page' => 'product9.php',
     ],
@@ -82,10 +91,21 @@ $PRODUCTS = [
         'name' => 'Landing Page Video Embed Bundle',
         'short' => 'Video versions tuned for website speed + clarity.',
         'long' => 'Multiple encodes + thumbnails + recommended placement. Includes a short headline copy pack for the page sections where the video will live.',
+        'photo' => 'https://picsum.photos/seed/echo-p10/800/450',
         'image' => 'images/products/p10.svg',
         'page' => 'product10.php',
     ],
 ];
+
+/**
+ * Card/hero image: prefer photo URL, fall back to local SVG.
+ */
+function product_image_src(array $p): string {
+    if (!empty($p['photo'])) {
+        return $p['photo'];
+    }
+    return $p['image'] ?? '';
+}
 
 /**
  * Convenience index by id.

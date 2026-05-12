@@ -35,7 +35,14 @@ include 'includes/header.php';
   <div class="grid">
     <?php foreach ($recentProducts as $p): ?>
       <div class="card product-card">
-        <img src="<?php echo htmlspecialchars($p['image']); ?>" alt="<?php echo htmlspecialchars($p['name']); ?>">
+        <img
+          src="<?php echo htmlspecialchars(product_image_src($p)); ?>"
+          alt="<?php echo htmlspecialchars($p['name']); ?>"
+          loading="lazy"
+          decoding="async"
+          data-fallback="<?php echo htmlspecialchars($p['image']); ?>"
+          onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback}"
+        >
         <div class="product-meta">
           <h3><?php echo htmlspecialchars($p['name']); ?></h3>
           <span class="badge"><?php echo htmlspecialchars(strtoupper($p['id'])); ?></span>

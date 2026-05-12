@@ -87,6 +87,22 @@ include 'includes/header.php';
     <div class="product-grid">
         <?php foreach ($PRODUCTS as $p): ?>
             <article class="product-card">
+                <?php
+                $imgPrimary = product_image_src($p);
+                if (!preg_match('#^https?://#i', $imgPrimary)) {
+                    $imgPrimary = 'lab-products-cookies/' . $imgPrimary;
+                }
+                $imgFallback = 'lab-products-cookies/' . $p['image'];
+                ?>
+                <img
+                    src="<?php echo htmlspecialchars($imgPrimary); ?>"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    data-fallback="<?php echo htmlspecialchars($imgFallback); ?>"
+                    onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback}"
+                    style="width:100%;height:180px;object-fit:cover;border-radius:12px;border:1px solid var(--color-border);margin-bottom:0.75rem;background:rgba(0,0,0,0.15);"
+                >
                 <div class="product-header">
                     <span class="product-icon">🎥</span>
                     <h2><?php echo htmlspecialchars($p['name']); ?></h2>
